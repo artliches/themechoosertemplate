@@ -1,1 +1,143 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'app/scss/colors';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+button {
+    font-family: 'Ubuntu Mono', sans-serif;
+    border: 0rem;
+    font-weight: bold;
+}
+
+.terminal {
+    background-color: $terminal-black;
+    color: $terminal-green;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
+    &.main-border {
+        background-color: $terminal-green;
+        transition: background 500ms ease-in-out;
+    }
+
+    header {
+        background-color: $terminal-green;
+        color: $terminal-black;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    .dropdown {
+        background-color: $terminal-green;
+        color: $terminal-black;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    fa-icon {
+        background-color: $terminal-black;
+    }
+}
+
+.dark {
+    background-color: $dark-bg;
+    color: $dark-text;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
+    &.main-border, .dropdown {
+        background-color: $dark-border;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    header {
+        background-color: white;
+        color: black;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    fa-icon {
+        color: $dark-text;
+        background-color: $dark-bg;
+    }
+}
+
+.light {
+    background-color: $light-bg;
+    color: $light-text;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
+    &.main-border {
+        background-color: $light-border;
+        transition: background 500ms ease-in-out
+    }
+
+    header {
+        background-color: $light-text;
+        color: $light-bg;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    .dropdown {
+        background-color: $light-border;
+        color: $light-bg;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    fa-icon {
+        background-color: white;
+    }
+}
+
+.mork {
+    background-color: $mork-bg;
+    color: $mork-text;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
+    &.main-border {
+        background-color: $mork-border;
+        transition: background 500ms ease-in-out
+    }
+
+    header {
+        background-color: white;
+        color: black;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    .dropdown {
+        background-color: $mork-border;
+        color: $mork-bg;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    fa-icon {
+        background-color: white;
+        color: $mork-bg;
+    }
+}
+
+.cyber {
+    background-color: $cyber-bg;
+    color: $cyber-text;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
+    &.main-border {
+        background-color: $cyber-border;
+        transition: background 500ms ease-in-out
+    }
+
+    header {
+        background-color: white;
+        color: $cyber-text;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    .dropdown {
+        background-color: $cyber-border;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    fa-icon {
+        background-color: white;
+    }
+}

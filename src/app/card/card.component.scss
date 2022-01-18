@@ -1,0 +1,29 @@
+.treasure-card {
+    width: 3in;
+    height: 5in;
+    border: 1px solid;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    
+    .card-header {
+        place-self: start stretch;
+        h2 {
+            margin: 0rem;
+        }
+    }
+
+    .card-body {
+        place-self: start stretch;
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+        grid-gap: 1rem;
+
+        .card-keywords {
+            font-size: 0.8rem;
+        }
+
+        // .card-descrip {
+
+        // }
+    }
+}

@@ -1,0 +1,22 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-gap: 1rem;
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+
+        input, textarea {
+            border-radius: 0rem;
+            border: 1px solid;
+        }
+    }
+
+    button {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}

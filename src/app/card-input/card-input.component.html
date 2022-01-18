@@ -1,0 +1,21 @@
+<form [formGroup]="cardInputForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for='item-title'>ITEM NAME</label>
+        <input type='text' id='item-title' formControlName='itemTitle'>
+    </div>
+
+    <div>
+        <label for='item-keywords'>ITEM KEYWORDS</label>
+        <input type='text' id='item-keywords' formControlName='itemKeywords'>
+    </div>
+
+    <div>
+        <label for='item-description'>ITEM DESCRIPTION</label>
+        <textarea type='text' id='item-description' formControlName='itemDescription'>
+        </textarea>
+    </div>
+
+    <button type='submit'>SUBMIT</button>
+</form>
+
+<button (click)='clear()'>CLEAR</button>

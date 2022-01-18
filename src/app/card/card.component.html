@@ -1,0 +1,29 @@
+<div class='card-display-grid'>
+    <div *ngFor='let cardData of cardArray'
+    class='treasure-card'
+    [ngClass]="{
+    'dark': themes.dark,
+    'light': themes.light,
+    'terminal': themes.terminal,
+    'mork': themes.mork,
+    'cyber': themes.cyber
+    }"
+>
+    <header class='card-header'>
+        <h2>
+            {{cardData.itemTitle}}
+        </h2>
+    </header>
+
+    <main class='card-body'>
+        <em class='card-keywords'>
+            {{cardData.itemKeywords}}
+        </em>
+
+        <div class='card-descrip'>
+            {{cardData.itemDescription}}
+        </div>
+    </main>
+</div>
+</div>
+
